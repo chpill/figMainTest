@@ -1,0 +1,3 @@
+^{:open-url false
+  :npm {:bundles {"dummy.js" "index.js"}}}
+{:main plop.main}

@@ -1,9 +1,10 @@
-/**
- * @format
- */
+cljsExports = {};
+cljsExports["react"] = require('react');
+cljsExports["react-native"] = require('react-native');
+cljsExports["create-react-class"] = require('create-react-class');
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+var figBridge = require("react-native-figwheel-bridge");
 
-AppRegistry.registerComponent(appName, () => App);
+figBridge.shimRequire(cljsExports);
+figBridge.start({appName:   "figMainTest",
+                 optionsUrl: "http://localhost:8081/target/public/cljs-out/android/cljsc_opts.json"});
