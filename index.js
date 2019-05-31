@@ -7,4 +7,4 @@ var figBridge = require("react-native-figwheel-bridge");
 
 figBridge.shimRequire(cljsExports);
 figBridge.start({appName:   "figMainTest",
-                 optionsUrl: "http://localhost:8081/target/public/cljs-out/android/cljsc_opts.json"});
+                 optionsUrl: "http://localhost:8081/target/public/cljs-out/dev/cljsc_opts.json"});
